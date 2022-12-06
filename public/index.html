@@ -10,7 +10,8 @@
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
-
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
     <!-- Fonts CSS-->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
@@ -33,8 +34,29 @@
         <i class="fa-solid fa-angles-down icon"></i>
       </div>  
     </nav>
-
+    <header>
+      <div>
+          <img src="/images/profile-hex.png"> 
+      </div>
+    
+      <div>
+          <h2>Your Name</h2>
+      </div>
+    </header>
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <main class="container">
+
+      <section class="new-tweet">
+        <form method="POST" action="/tweets">
+          <label for="tweet-text">What are you yowling about?</label>
+          <textarea name="text" id="tweet-text"></textarea>
+          <div class="lower-tweet">
+            <button type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
+
+    </main>
   </body>
 </html>
