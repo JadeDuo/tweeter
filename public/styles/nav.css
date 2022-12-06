@@ -1,0 +1,29 @@
+nav {
+  display: flex;
+  height: 120px;
+  width: 100%;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  padding: 1.5em;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  font-family: 'Bungee', cursive;
+  font-size: xx-large;
+  align-items: flex-end;
+}
+
+.right-nav {
+  font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.icon {
+  display: flex;
+  align-self: center;
+}
