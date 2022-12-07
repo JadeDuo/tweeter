@@ -24,11 +24,11 @@ nav {
   font-family: 'Source Sans Pro', sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   
 }
 
-.icon {
+nav .icon {
   display: flex;
   align-self: center;
 }

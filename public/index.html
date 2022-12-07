@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
 
     <!-- Fonts CSS-->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
@@ -23,6 +24,9 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
+
   </head>
 
   <body>
@@ -34,13 +38,13 @@
         <i class="fa-solid fa-angles-down icon"></i>
       </div>  
     </nav>
-    <header>
+    <header class="main-header">
       <div>
           <img src="/images/profile-hex.png"> 
       </div>
     
       <div>
-          <h2>Your Name</h2>
+          <h2>Namey McNamerson</h2>
       </div>
     </header>
     <!-- Page-specific (main) content here -->
@@ -55,6 +59,26 @@
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
+      </section>
+
+      <section class="display-tweet">
+        <article>
+          <header>
+            <span>🐱</span>
+            <span>Jade Duong</span>
+            <span class="username">@Jadergator</span>
+          </header>
+          <p>This is a tweet that meets the full 140 character count limit as imposed by this application. It is no more and no less than 140 characters.</p>
+          <footer class="tweet-footer">
+            <span>day posted</span>
+            <div>
+              <i class="fa-solid fa-flag icon"></i>
+              <i class="fa-solid fa-retweet icon"></i>
+              <i class="fa-solid fa-heart icon"></i>
+            </div>
+            
+          </footer>
+        </article>
       </section>
 
     </main>
