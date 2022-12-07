@@ -18,6 +18,12 @@
 .display-tweet header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+/* aligns the pf-icon and name */
+.display-tweet header div{
+  display: flex;
+  align-items: center;
 }
 
 .display-tweet footer {
@@ -31,14 +37,17 @@
   padding-bottom: .5em;
 }
 
+
+.display-tweet .icon {
+  color: #4056A1;
+  }
+
 .display-tweet .icon:hover {
-color: yellow;
+color: orange;
 }
+
+
 
 article {
   width: 100%;
-}
-.username {
-  display: flex;
-  justify-content: flex-end;
 }
