@@ -1,53 +1,55 @@
-
 .display-tweet {
-  margin-top: 2em;
-  margin-bottom:2em;
+  display: flex;
+  flex-direction: column;
+  
+}
+article {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+  margin-bottom: 1em;
   padding-top: .5em;
   padding-bottom: .5em;
   padding-left: 1em;
   padding-right: 1em;
-  display: flex;
   width: 100%;
   border: 3px solid ;
 }
 
-.display-tweet:hover {
+article:hover {
   box-shadow: 10px 5px 5px #a395c9;
 }
 
-.display-tweet header {
+article header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 /* aligns the pf-icon and name */
-.display-tweet header div{
+article header div{
   display: flex;
   align-items: center;
 }
 
-.display-tweet footer {
-  display: flex;
-  justify-content: space-between;
+article img {
+  margin-right: .5em;
 }
 
-.display-tweet p {
+article p {
   display: flex;
   border-bottom: 3px solid black;
   padding-bottom: .5em;
 }
 
+article footer {
+  display: flex;
+  justify-content: space-between;
+}
 
-.display-tweet .icon {
+article .icon {
   color: #4056A1;
   }
 
-.display-tweet .icon:hover {
+article .icon:hover {
 color: orange;
-}
-
-
-
-article {
-  width: 100%;
 }
