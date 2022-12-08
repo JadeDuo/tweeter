@@ -1,3 +1,5 @@
+/*Styles the tweets retrived from /tweets DB array*/
+
 .display-tweet {
   display: flex;
   flex-direction: column;
@@ -6,13 +8,13 @@
 article {
   display: flex;
   flex-direction: column;
+  width: 100%;
   margin-top: 1em;
   margin-bottom: 1em;
-  padding-top: .5em;
-  padding-bottom: .5em;
   padding-left: 1em;
   padding-right: 1em;
-  width: 100%;
+  padding-top: .5em;
+  padding-bottom: .5em;
   border: 3px solid ;
 }
 
@@ -25,7 +27,7 @@ article header {
   justify-content: space-between;
   align-items: center;
 }
-/* aligns the pf-icon and name */
+
 article header div{
   display: flex;
   align-items: center;
@@ -37,8 +39,8 @@ article img {
 
 article p {
   display: flex;
-  border-bottom: 3px solid black;
   padding-bottom: .5em;
+  border-bottom: 3px solid black;
   overflow-wrap: anywhere;
 }
 
@@ -49,7 +51,7 @@ article footer {
 
 article .icon {
   color: #4056A1;
-  }
+}
 
 article .icon:hover {
 color: orange;

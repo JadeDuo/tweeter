@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- Meta Information -->
-    <title>Tweeter - Home Page</title>
+    <title>Tweeter - SPA</title>
 
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
@@ -29,7 +29,6 @@
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
-
   </head>
 
   <body>
@@ -41,18 +40,18 @@
         <i class="fa-solid fa-angles-down icon"></i>
       </div>  
     </nav>
+    <!-- Header -->
     <header class="main-header">
       <div>
         <img src="/images/profile-hex.png"> 
       </div>
-    
       <div>
-          <h2>Namey McNamerson</h2>
+          <h2>Polly Gon</h2>
       </div>
     </header>
     <!-- Page-specific (main) content here -->
     <main class="container">
-
+      <!-- New tweet form + error drop down-->
       <section class="new-tweet">
         <div id="error-container">
           <p></p>
@@ -66,11 +65,8 @@
           </div>
         </form>
       </section>
-
-      <section class="display-tweet">
-        
-      </section>
-
+      <!-- tweets html created in JS, is place within this section. -->
+      <section class="display-tweet"></section>
     </main>
   </body>
 </html>
