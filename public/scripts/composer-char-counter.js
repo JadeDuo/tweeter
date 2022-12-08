@@ -1,5 +1,7 @@
 $(document).ready(function() {
+
 const tweet = $("#tweet-text");
+
   tweet.on("input", function() {
     const text = $(this).val();
     const counter = $(this).siblings(".lower-tweet").children(".counter")
@@ -11,9 +13,6 @@ const tweet = $("#tweet-text");
     }
 
   })
-
-
-
 
 });
 

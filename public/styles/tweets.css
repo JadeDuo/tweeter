@@ -1,7 +1,7 @@
 .display-tweet {
   display: flex;
   flex-direction: column;
-  
+  width: 100%;
 }
 article {
   display: flex;
@@ -39,6 +39,7 @@ article p {
   display: flex;
   border-bottom: 3px solid black;
   padding-bottom: .5em;
+  overflow-wrap: anywhere;
 }
 
 article footer {
