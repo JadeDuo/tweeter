@@ -30,7 +30,7 @@ $(document).ready(function() {
         </div>
       </footer>    
     </article>
-    `)
+    `);
     return $tweet;
   };
   //loops through all tweets given by load tweets, and creates the html for all tweets in /tweets DB array
@@ -41,11 +41,11 @@ $(document).ready(function() {
       $('.display-tweet').prepend($tweet);
     }
   };
-  //recieves array of tweets from the /tweet DB array, and passes to renderTweets 
+  //recieves array of tweets from the /tweet DB array, and passes to renderTweets
   const loadTweets = function() {
     $.get("/tweets", function(response) {
       renderTweets(response);
-    })
+    });
   };
   //replaces the submit action on tweet button to serialize data and add it to /tweets DB array, and resets page to display all tweets + newly created tweet.
   const $form = $("#addTweet");
@@ -77,16 +77,15 @@ $(document).ready(function() {
       $("#tweet-text").val("");
       $(".counter").text(140);
       $("#error-container").slideUp();
-        loadTweets();
-      })
-
-  })
+      loadTweets();
+    });
+  });
   //calls the initial function sequence to display existing tweets when loaded or refreshed.
-  loadTweets()
-})
+  loadTweets();
+});
 
 //escape helper function for converting content to basic text
-const toSafeText = function (str) {
+const toSafeText = function(str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
