@@ -10,17 +10,18 @@
   .desktop-view {
     display: flex;
     flex-direction: row;
-    
     }
   
-  
+  .container {
+    margin-top: 120px;
+  }
 
   .tweet {
     background-color: #f4f1ec;
   }
   
   .new-tweet {
-    margin-top: 6em;
+    
     background-color: #f4f1ec;
     border: 3px solid;
   }
