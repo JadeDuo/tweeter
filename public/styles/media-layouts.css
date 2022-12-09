@@ -1,0 +1,31 @@
+/*Default design is mobile*/
+
+/*Desktop Style*/
+@media only screen and (min-width: 1024px) {
+
+  body {
+    background-color: #a395c9;
+    background-image: url("https://www.transparenttextures.com/patterns/binding-dark.png");
+  }
+  .desktop-view {
+    display: flex;
+    flex-direction: row;
+    
+    }
+  
+  
+
+  .tweet {
+    background-color: #f4f1ec;
+  }
+  
+  .new-tweet {
+    margin-top: 6em;
+    background-color: #f4f1ec;
+    border: 3px solid;
+  }
+
+  article:hover {
+    box-shadow: 10px 5px 5px #4056A1;
+  }
+}

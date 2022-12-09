@@ -29,7 +29,19 @@ nav {
   
 }
 
+.right-nav:hover {
+  cursor: pointer;
+}
+
+.right-nav:hover .icon {
+  font-size: 120%;
+  color: red;
+}
+
 nav .icon {
   display: flex;
   align-self: center;
+  transition: font-size 1s;
 }
+
+
